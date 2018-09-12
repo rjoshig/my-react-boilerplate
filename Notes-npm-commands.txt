@@ -1,7 +1,5 @@
 npm i react react-dom
-
-//npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
-
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
 npm install --save-dev jest enzyme enzyme-adapter-react-16 react-test-renderer
 
 //npm uninstall @babel/core @babel/cli @babel/preset-env @babel/preset-react
@@ -22,3 +20,32 @@ npm i clean-webpack-plugin --save-dev
 npm i webpack-cli webpack-dev-server --save-dev
 
 npm i webpack-merge --save-dev
+
+
+
+"start": "webpack-dev-server --progress --color --env.development --config tools/webpack.js"
+
+
+    "start": "webpack-dev-server --config webpack.dev.js",
+
+
+npm uninstall  react-hot-loader
+
+
+npx create-react-app react-boilerplate-app
+====================
+
+
+npm uninstall babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-2
+npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
+
+npm i --save-dev babel-jest 'babel-core@^7.0.0-0' @babel/core regenerator-runtime
+
+
+
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+
+
