@@ -1,15 +1,16 @@
-
-const CleanWebpackPlugin = require('clean-webpack-plugin')
-const HtmlWebPackPlugin = require('html-webpack-plugin')
-const path = require('path')
+const webpack = require('webpack');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
 
 module.exports = {
   entry: {
     main: './src/index.js'
   },
   output: {
-    filename: '[name].[hash].js',
-    path: path.resolve('./dist'),
+    path: path.resolve(__dirname, '/dist'),
+    publicPath: '/',
+    filename: '[name].[hash].js'
   },
   module: {
     rules: [
@@ -31,9 +32,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new HtmlWebPackPlugin({
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
       template: 'index.html'
     }),
-    new CleanWebpackPlugin(['dist']),
+    new webpack.HotModuleReplacementPlugin()
   ]
+
 }
+//filename: '[name].[hash].js',
+    // new CleanWebpackPlugin(['dist']),
+    // new HtmlWebpackPlugin({
+    //   template: 'index.html'
+    // }),
