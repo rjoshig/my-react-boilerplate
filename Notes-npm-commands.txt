@@ -1,0 +1,24 @@
+npm i react react-dom
+
+//npm install --save-dev @babel/core @babel/cli @babel/preset-env @babel/preset-react
+
+npm install --save-dev jest enzyme enzyme-adapter-react-16 react-test-renderer
+
+//npm uninstall @babel/core @babel/cli @babel/preset-env @babel/preset-react
+
+npm i babel-cli babel-core babel-preset-env babel-preset-react babel-preset-stage-2 --save-dev
+
+
+npm i webpack --save-dev
+
+npm i babel-loader@7.1.4 --save-dev
+
+npm i node-sass sass-loader style-loader css-loader --save-dev
+
+npm i html-webpack-plugin --save-dev
+
+npm i clean-webpack-plugin --save-dev
+
+npm i webpack-cli webpack-dev-server --save-dev
+
+npm i webpack-merge --save-dev
