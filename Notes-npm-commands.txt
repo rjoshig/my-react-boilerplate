@@ -49,3 +49,25 @@ npm i --save-dev babel-jest 'babel-core@^7.0.0-0' @babel/core regenerator-runtim
 
 
 
+CLONE INTO DIFFERENT REPO 
+
+git clone https://github.com/rjoshig/my-react-boilerplate react-calculator
+
+
+
+cd my-react-boilerplate
+git push --mirror https://github.com/rjoshig/react-calculator.git
+
+cd ..
+rm -rf my-react-boilerplate
+
+git remote add origin git@github.com:rjoshig/react-calculator.git
+
+git remote add origin git@github.com:rjoshig/react-calculator.git
+git push -u origin master
+
+
+
+
+git remote add origin https://github.com/rjoshig/react-calculator.git
+git push -u origin master
